@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Pixelate</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700|Karma:400,700" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <div class="container">
+  <div class="flex-container">
+
+      <div class="flex-child">
+        <h2>Original</h2>
+        <img id="original" src='img/M101.jpg' style="width: 300px; height: 300px;"></img>
+      </div>
+
+      <div class="flex-child">
+        <h2>Telescope Optics</h2>
+        <canvas id="blurred" style="width: 300px; height: 300px;"></canvas><br>
+        <h4>Telescope Aperture</h4>
+        <input class='slider reversedRange' id="slider" type="range" min="1" max="100" value="10">
+      </div>
+
+      <div class="flex-child">
+        <h2>Sensor</h2>
+        <canvas id="pixelated" style="width: 300px; height: 300px;"></canvas><br>
+        <h4>Pixel Scale</h4>
+        <input class='slider reversedRange' id="blocks" type="range" min="1" max="20" value="10">
+      </div>
+
+  </div>
+</div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="js/pixelate.js"></script>
+  <script src="js/stackblur.js"></script>
+
+</body>
+</html>
