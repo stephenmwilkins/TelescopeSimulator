@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>RGB Splitting with HTML5 Canvas and JavaScript 🪓</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <div class="container rgb">
+    <div class="flex-container">
+
+        <div class="flex-child">
+          <h2>R</h2>
+          <canvas id="R"></canvas><br>
+          <input class='slider' id="rOffset" type="range" min="0" max="1" step="0.01" value="1" />
+        </div>
+
+        <div class="flex-child">
+          <h2>G</h2>
+          <canvas id="G"></canvas><br>
+          <input class='slider' id="gOffset" type="range" min="0" max="1" step="0.01" value="1" />
+        </div>
+
+        <div class="flex-child">
+          <h2>B</h2>
+          <canvas id="B"></canvas><br>
+          <input class='slider' id="bOffset" type="range" min="0" max="1" step="0.01" value="1" />
+        </div>
+
+        <div class="flex-child">
+          <h2>RGB</h2>
+          <canvas id="RGB"></canvas><br>
+
+        </div>
+
+    </div>
+    </div>
+
+
+    <!-- Where the Magic Happens -->
+    <script src="js/rgb.js"></script>
+  </body>
+</html>

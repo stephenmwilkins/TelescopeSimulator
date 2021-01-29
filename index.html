@@ -9,7 +9,10 @@
 
 <body>
 
-  <div class="container">
+  <div class="container telescope">
+
+    <br><br><br>
+    <h1>Telescope simulator</h1>
   <div class="flex-container">
 
       <div class="flex-child">
@@ -37,6 +40,44 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="js/pixelate.js"></script>
   <script src="js/stackblur.js"></script>
+
+
+  <div class="container rgb">
+
+<br><br><br>
+<h1>Colour image creator</h1>
+
+  <div class="flex-container">
+      <div class="flex-child">
+        <h2>R</h2>
+        <canvas id="R"></canvas><br>
+        <input class='slider' id="rOffset" type="range" min="0" max="1" step="0.01" value="1" />
+      </div>
+
+      <div class="flex-child">
+        <h2>G</h2>
+        <canvas id="G"></canvas><br>
+        <input class='slider' id="gOffset" type="range" min="0" max="1" step="0.01" value="1" />
+      </div>
+
+      <div class="flex-child">
+        <h2>B</h2>
+        <canvas id="B"></canvas><br>
+        <input class='slider' id="bOffset" type="range" min="0" max="1" step="0.01" value="1" />
+      </div>
+
+      <div class="flex-child">
+        <h2>RGB</h2>
+        <canvas id="RGB"></canvas><br>
+
+      </div>
+
+  </div>
+  </div>
+
+
+  <!-- Where the Magic Happens -->
+  <script src="js/rgb.js"></script>
 
 </body>
 </html>

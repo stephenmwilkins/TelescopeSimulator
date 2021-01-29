@@ -14,6 +14,16 @@ body{
 	width: 906px;
 }
 
+.telescope {
+	width: 906px;
+}
+
+.rgb {
+	width: 1208px;
+}
+
+
+
 .flex-container {
     display: flex;
 }
